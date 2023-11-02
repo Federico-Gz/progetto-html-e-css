@@ -99,3 +99,60 @@ body{
     justify-content: center;
     padding: 5px;
 }
+
+
+/*HOME SECTION*/
+
+.home{
+    height: 100%;
+    border-bottom: 2px solid var(--text-color-3);
+}
+
+.container-home{
+    display:flex;
+    margin: 0px 150px;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.info{
+    flex: 0 0 50%;
+    max-width: 50%;
+    
+    
+}
+
+.info h1{
+    margin-bottom:50px;
+    color: var(--text-color-1);
+    font-size: 35px;
+}
+
+.info h2{
+    margin-bottom:15px;
+    color: var(--text-color-2);
+    font-size: 30px;
+}
+
+.info p{
+    color: var(--text-color-3);
+    font-size: 25px;
+
+}
+
+.foto{
+    text-align: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 600px;
+    min-height: 500px;
+    min-width: 400px;
+    background: url(img/foto-profilo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+}
+
