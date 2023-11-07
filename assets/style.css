@@ -156,3 +156,87 @@ body{
     background-position: center; 
 }
 
+
+/*ABOUT SECTION*/
+
+.about{
+    height: 100%;
+    border-bottom: 2px solid var(--text-color-3);
+    border-top: 2px solid var(--text-color-3);
+}
+
+.container-about{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 150px;
+    padding-top: 120px;
+}
+
+
+.titolo{
+    position: relative;
+    top:-80px;
+    font-size: 26px;
+    color: var(--text-color-1);
+    border-bottom: 1px solid var(--text-color-2);
+}
+
+.about-content{
+    position: relative;
+    top: -60px;
+}
+
+.riga{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.riga .descrizione{
+    flex: 2;
+    margin-right: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 3px var(--text-color-3);
+    color: var(--text-color-2);
+    font-size: 20px;
+}
+
+.riga .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 3px var(--text-color-3);
+    color: var(--text-color-2);
+    font-size: 20px;
+}
+
+.riga .skills .skills-item{
+    padding: 5px;
+}
+
+.riga .skills .skills-item .type{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.riga .skills .skills-item .type .tipo{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.riga .skills .skills-item .type .skill-percent{
+    font-size: 18px;
+}
+
+.riga .skills .skills-item .progress{
+    border: 1px solid var(--text-color-2);
+}
+
+.riga .skills .skills-item .progress .progress-in{
+    background: var(--bg-color-1);
+    height: 10px;
+}
