@@ -1,0 +1,119 @@
+:root{
+    --bg-color-1: rgb(58, 58, 58);
+    --bg-color-2: rgb(29, 29, 29);
+    --bg-color-3: rgb(19, 19, 19);
+
+    --text-color-1: white;
+    --text-color-2: rgb(192, 192, 192);
+    --text-color-3: rgb(231, 90, 90);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-color-2);
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center ;
+}
+
+.form-box{
+    background: var(--bg-color-1);
+    position: relative;
+    top: 160px;
+    padding-top: 10px;
+    width: 60%;
+    border-radius: 15px;
+}
+
+.form-box .titolo{
+    text-align: center;
+    font-size: 2em;
+}
+
+.form-box .titolo h2{
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--text-color-2);
+}
+
+.form-box .titolo h3{
+    font-weight: 600;
+    color: var(--text-color-3);
+}
+
+.form{
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-control{
+    width: 100%;
+    border-radius: 15px;
+    height: 30px;
+    padding-left:15px;
+    font-size: 18px;
+}
+
+
+.riga{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name{
+    flex: 1;
+    padding: 0px 20px;
+    margin-bottom: 15px;
+}
+
+.surname{
+    flex: 1;
+    padding: 0px 20px;
+    margin-bottom: 15px;
+}
+
+.email{
+    padding: 0px 20px;
+    margin-bottom: 15px;
+}
+
+.message{
+    padding: 0px 20px;
+    margin-bottom: 15px;
+    min-height: 100px;
+}
+
+#size{
+    min-height: 150px;
+    max-height: 400px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+.send{
+    align-self: flex-end;
+    margin-right:20px;
+    margin-bottom: 12px;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 60px;
+    height: 30px;
+    background: var(--text-color-2);
+}
+

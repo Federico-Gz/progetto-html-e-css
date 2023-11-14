@@ -10,6 +10,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background: var(--bg-color-2);
+    font-size: 10px;
 }
 
 *{
@@ -19,8 +21,7 @@ body{
 }
 
 .main-content{
-    margin-left: 260px;
-    
+    margin-left: 260px; 
 }
 
 
@@ -42,7 +43,7 @@ body{
     position: absolute;
     top: 80px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 3em;
 }
 
 .aside .logo span{
@@ -64,7 +65,7 @@ body{
 .menu li a{
     text-decoration: none;
     color: var(--text-color-2);
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 500;  
 }
 
@@ -78,26 +79,11 @@ body{
 
 .menu li ion-icon{
     margin-right: 15px;
-    font-size: 22px;
+    font-size: 1.4em;
     position: relative;
     top: 3px;
 }
 
-
-
-.nav-toggler{
-    position: fixed;
-    top: 20px;
-    left: 300px;
-    background: var(--bg-color-1);
-    border-radius: 5px;
-    font-size: 35px;
-    cursor: pointer;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-}
 
 
 /*HOME SECTION*/
@@ -105,7 +91,6 @@ body{
 .home{
     height: 100%;
     border-bottom: 2px solid var(--text-color-3);
-    background: var(--bg-color-2);
 }
 
 .container-home{
@@ -114,6 +99,7 @@ body{
     padding-top: 120px;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 
@@ -121,25 +107,23 @@ body{
 .info{
     flex: 0 0 50%;
     max-width: 50%;
-    
-    
 }
 
 .info h1{
     margin-bottom:50px;
     color: var(--text-color-1);
-    font-size: 35px;
+    font-size: 3.5em;
 }
 
 .info h2{
     margin-bottom:15px;
     color: var(--text-color-2);
-    font-size: 30px;
+    font-size: 3em;
 }
 
 .info p{
     color: var(--text-color-3);
-    font-size: 25px;
+    font-size: 2.5em;
 
 }
 
@@ -161,15 +145,12 @@ body{
 
 .about{
     height: 100vmax;
-    background: var(--bg-color-2);
     border-bottom: 2px solid var(--text-color-3);
     border-top: 2px solid var(--text-color-3);
     
 }
 
 .container-about{
-    display: flex;
-    flex-direction: column;
     margin: 0px 150px;
     padding-top: 120px;
 }
@@ -178,15 +159,11 @@ body{
 .titolo{
     position: relative;
     top:-80px;
-    font-size: 26px;
+    font-size: 2.6em;
     color: var(--text-color-1);
     border-bottom: 1px solid var(--text-color-2);
 }
 
-.about-content{
-    position: relative;
-    top: -60px;
-}
 
 .riga{
     display: flex;
@@ -202,7 +179,7 @@ body{
     border-radius: 10px;
     box-shadow: 0px 3px 5px 3px var(--text-color-3);
     color: var(--text-color-2);
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .riga .skills{
@@ -214,7 +191,7 @@ body{
     border-radius: 10px;
     box-shadow: 0px 3px 5px 3px var(--text-color-3);
     color: var(--text-color-2);
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .riga .skills .skills-item{
@@ -229,11 +206,11 @@ body{
 
 .riga .skills .skills-item .type .tipo{
     font-weight: 800;
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .riga .skills .skills-item .type .skill-percent{
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .riga .skills .skills-item .progress{
@@ -256,18 +233,17 @@ body{
     border-radius: 10px;
     box-shadow: 0px 3px 5px 3px var(--text-color-3);
     color: var(--text-color-2);
-    font-size: 18px;
+    font-size: 1.8em;
     height: min-content;
 }
 
-.riga .studi-item{
-    display: flex;
-}
 
 
 .riga .studi ion-icon{
     margin: 0 10px;
-    font-size: 74px;
+    font-size: 7.4em;
+    min-width: 30px;
+    max-width: 30px;
     height: 28px;
     padding: 8px;
     border-radius: 10px;
@@ -297,7 +273,7 @@ body{
     border-radius: 10px;
     box-shadow: 0px 3px 5px 3px var(--text-color-3);
     color: var(--text-color-2);
-    font-size: 18px;
+    font-size: 1.8em;
 }
 
 .riga .esperienze-item{
@@ -306,7 +282,7 @@ body{
 
 .riga .esperienze ion-icon{
     margin: 0 10px;
-    font-size: 74px;
+    font-size: 7.4em;
     height: 28px;
     min-width: 30px;
     max-width: 30px;
@@ -341,6 +317,86 @@ body{
 
 
 
-
-
 /*responsive*/
+
+@media (max-width: 968px){
+
+    /*ASIDE MENU*/
+    .aside{
+        height: 80px;
+        width: 100%;
+    }
+
+    .aside .logo{
+        display: none;
+    }
+
+    .aside .menu{
+        position: absolute;
+        top: 30px;
+        display: flex;
+    }
+
+    .aside .menu li a{
+        margin-right: 40px;
+    }
+
+    .aside .menu li a ion-icon{
+        display: none;
+    }
+
+    
+
+    .main-content{
+        margin-left: 0px;
+    }
+
+    /*HOME*/
+
+    .container-home{
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .info{
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: 0.8em ;
+        text-align: center;  
+    }
+
+    .info h1, h2, p{
+        padding-bottom:40px;
+    }
+
+    .foto{
+        display: none;
+    }
+
+    /*ABOUT*/
+
+    .container-about{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    
+
+    .titolo{
+        position: static;
+        align-self: center;
+    }
+
+    .studi-item ion-icon{
+        display: none;
+    }
+
+    .esperienze-item ion-icon{
+        display: none;
+    }
+
+    
+
+}
