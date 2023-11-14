@@ -22,7 +22,7 @@ body{
 
 .main-container{
     display: flex;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .form-box{
@@ -97,7 +97,7 @@ body{
 
 #size{
     min-height: 150px;
-    max-height: 400px;
+    max-height: 310px;
     min-width: 100%;
     max-width: 100%;
 }
@@ -117,3 +117,28 @@ body{
     background: var(--text-color-2);
 }
 
+/*linl social*/
+
+.social{
+    position: absolute;
+    top: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-link{
+    margin: 0px 35px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px var(--bg-color-1);
+}
+
+.social i{
+    font-size: 50px;
+}
+
+a {
+    color: var(--text-color-1);
+}
