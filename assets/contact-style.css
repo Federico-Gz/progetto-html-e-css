@@ -89,6 +89,7 @@ body{
     margin-bottom: 15px;
 }
 
+
 .message{
     padding: 0px 20px;
     margin-bottom: 15px;
@@ -141,4 +142,40 @@ body{
 
 a {
     color: var(--text-color-1);
+}
+
+
+
+/*responsive*/
+
+@media (max-width: 618px){
+    body{
+        font-size: 0.7em;
+    }
+
+    .form-control{
+        padding-left: 10px;
+    }
+
+    input::placeholder{
+        font-size: 0.8em;
+    }
+
+    textarea::placeholder{
+        font-size: 0.9em;
+    }
+
+    .social{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-link{
+        margin-bottom: 15px;
+        
+    }
+
+    .social-link i{
+        font-size:3.5em;
+    }
 }
