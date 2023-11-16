@@ -153,6 +153,16 @@ a {
         font-size: 0.7em;
     }
 
+    .form-box{
+        position: relative;
+        top: 60px;
+        width: 80%;
+    }
+
+    .social{
+        position: absolute;
+        top: 650px;
+    }
     .form-control{
         padding-left: 10px;
     }
