@@ -330,12 +330,17 @@ body{
         margin-bottom: 30px;
     }
 
-    .descrizione{
+    .riga .descrizione{
         margin-bottom: 30px;
+        margin-right: 0px;
     }
 
     .riga{
         flex-direction: column;
+    }
+
+    .riga .studi{
+        margin-right: 0px;
     }
 }
 
@@ -352,7 +357,6 @@ body{
     }
 
     .aside .menu{
-        /*position: absolute;*/
         top: 30px;
         display: flex;
     }
