@@ -198,6 +198,16 @@ body{
     font-size: 2em;
 }
 
+
+.titolo-box {
+    text-align: center;
+    color: var(--text-color-1);
+    font-size: 1.2em;
+    background: var(--bg-color-1);
+    height: fit-content;
+}
+
+
 .riga .skills .skills-item{
     padding: 5px;
 }
@@ -325,7 +335,7 @@ body{
 /*responsive*/
 
 
-@media (max-width:1239px){
+@media (max-width:1439px){
     .studi{
         margin-bottom: 30px;
     }
@@ -374,6 +384,7 @@ body{
     .main-content{
         margin-left: 0px;
     }
+
 
     /*HOME*/
 
