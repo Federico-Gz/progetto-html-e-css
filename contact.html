@@ -30,31 +30,31 @@
                 <h2>Contattami</h2>
                 <h3>Compila il form per inviarmi un messaggio o scrivimi sui miei profili social</h3>
             </div>
-            <div class="form">
+            <form onsubmit="sendEmail(); return false;">
                 <div class="riga">
                     <div class="name">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <input type="text" class="form-control" id="name" placeholder="Name" required >
                     </div>
                     <div class="surname">
-                        <input type="text" class="form-control" id="surname" placeholder="Surname">
+                        <input type="text" class="form-control" id="surname" placeholder="Surname" required>
                     </div>
                 </div>
             
                 <div class="email">
-                    <input type="email" class="form-control" id="mail" placeholder="Email">
+                    <input type="email" class="form-control" id="mail" placeholder="Email" required >
                 </div>
             
             
                 <div class="message">
-                    <textarea class="form-control" id="size" placeholder="Message..."></textarea>
+                    <textarea class="form-control" id="size" placeholder="Message..." required></textarea>
                 </div>
             
             
                 <div class="send">
-                    <button onclick="sendMessage();" type="submit" class="btn">Send</button>
+                    <button type="submit" class="btn">Send</button>
                 </div>
             
-            </div>
+            </form>
         </div>
 
         <div class="social">
@@ -68,27 +68,26 @@
     </div>
 
     <script>
-       function sendMessage() {
-        (function(){
-            emailjs.init("WUzvwRnm7INbGETmh");
-        })();
-
-        var serviceID = "service_i4tr9f9";
-        var templateID = "template_rdls9n5";
-        var params = {
-            sendername: document.querySelector('#name').value,
-            sendersurname: document.querySelector('#surname').value,
-            sendermail: document.querySelector('#mail').value,
-            message: document.querySelector('#size').value,
-        };
-
-        emailjs.send(serviceID, templateID, params)
-        .then(res => {
-            alert('Grazie, ' + params['sendername'] + 'Il tuo messaggio è stato inviato');
-        })
-        .catch();
-       } 
+        emailjs.init("WUzvwRnm7INbGETmh"); 
+    
+        function sendEmail() {
+            emailjs.send("service_0m1jbhf", "template_rdls9n5", {
+                name: document.getElementById("name").value,
+                surname: document.getElementById("surname").value,
+                email: document.getElementById("mail").value,
+                message: document.getElementById("size").value
+            })
+            .then(function(response) {
+                console.log("Email inviata con successo", response);
+                alert("Email inviata con successo!");
+            })
+            .catch(function(error) {
+                console.log("Errore durante l'invio della mail", error);
+                alert("Errore durante l'invio della mail. Riprovare.");
+            });
+        }
     </script>
+    
+    
 </body>
 </html>
-
