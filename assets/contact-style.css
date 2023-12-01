@@ -63,6 +63,7 @@ body{
 .form-box .titolo h3{
     font-weight: 600;
     color: var(--text-color-3);
+    margin-bottom: 20px;
 }
 
 .form{
@@ -119,7 +120,7 @@ body{
 
 
 .send{
-    align-self: flex-end;
+    text-align: right;
     margin-right:20px;
     margin-bottom: 12px;
 }
@@ -132,7 +133,7 @@ body{
     background: var(--text-color-2);
 }
 
-/*linl social*/
+/*link social*/
 
 .social{
     position: absolute;
