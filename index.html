@@ -1,9 +1,20 @@
 <DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sito web personale di Federico Graziani, per vedere le mie esperienze lavorative e studi, e per mettersi in contatto con me">
     <title>Federico Graziani</title>
+
+    <!--OG tags-->
+    <meta property="og:title" content="Federico Graziani, sito web personale">
+    <meta property="og:description" content="Federico Graziani Web Developer">
+    <meta property="og:image" content="https://github.com/Federico-Gz/progetto-html-e-css/blob/main/assets/img/foto-profilo.png">
+    <meta property="og:url" content="https://federico-gz.github.io/progetto-html-e-css/">
+    <meta property="og:type" content="sito web personale">
+
+    <!--robots tag-->
+    <meta name="robots" content="all">
 
     <!--===== CSS FILE =====-->
     <link rel="stylesheet" href="assets/style.css">
@@ -29,8 +40,8 @@
            <div class="logo"><span>F</span>ederico.</div>
            
            <ul class="menu">
-                <li><a href="#"><ion-icon name="home-outline"></ion-icon>Home</a></li>
-                <li><a href=#on-about><ion-icon name="person-outline"></ion-icon>About</a></li>
+                <li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+                <li><a href="about.html"><ion-icon name="person-outline"></ion-icon>About</a></li>
                 <li><a href="#"><ion-icon name="folder-outline"></ion-icon>Portfolio</a></li>
                 <li><a href="contact.html"><ion-icon name="mail-open-outline"></ion-icon>Contact</a></li>
            </ul>
@@ -48,177 +59,15 @@
                         <h2>Sto studiando per diventare Web Devolper</h3>
                         <p>Quello che stai vedendo è il risultato del mio primo progetto</p>
                     </div>
-                    <div class="foto">
-                        
-                    </div>
+                    
+                    <img src="assets\img\foto-profilo.png" alt="foto profilo" height="600px" width="500px">
+                    
                 </div>
             </section>
             <!--=====HOME END=====-->
 
-            <!--=====ABOUT START=====-->
-            <section class="about" id="on-about">
-                <div class="container-about">
-                    <div class="titolo">
-                        <h1>About <span>Me</span></h1>
-                    </div>
-                    <!--ABOUT-CONTENT CONTEINER START-->
-                    <div class="about-content">
-                        <!--RIGA START-->
-                        <div class='riga'>
-                            <div class="descrizione">
-                                <p>Sono nuovo nel mondo della programmazione e sviluppo web ma ho tanta voglia di imparare e mettermi in gioco.
-                                    Dopo la scuola superiore, ho intrapreso un percorso nell'univesità di chimica che, dopo quattro anni, ho deciso di lasciare, in seguito ad un'esperienza lavorativa che mi aveva fatto capire che non avrei voluto fare quello nella vita; questa esperienza di studi mi ha insegnato a ragionare in modo analitico e metodico, che sarà sicuramente utile in questo nuovo percorso.
-                                    Ho svolto diversi lavori fino ad adesso, ognuno dei quali mi ha dato l'opportunità di imparare qualcosa di nuovo, ma ora che ho trovato una vera e propria passione nella programmazione, voglio dedicarmi a questo e farlo al meglio. 
-                                
-                                <h3>Hobby</h3>
-
-                                <p>Gioco a calcio da quando ero bambino e tutt'ora è al centro della mia vita sportiva e non solo, infatti faccio parte di una squadra e alleno un gruppo di ragazzi; penso che lo sport sia
-                                essenziale per i valori che trasmette.
-                                </p>
-                            </div>
-                
-                            <!--===== SKILLS CONTAINER START =====-->
-                            <div class="skills">
-                                <div class="titolo-box">
-                                    <h2>Skills</h2>
-                                </div>
-                                <div class="skills-item">
-                                    <div class="type">
-                                        <div class='tipo'>HTML</div>
-                                        <div class="skill-percent">65%</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 65%;"></div>
-                                    </div>
-                                </div>
-                
-                                <div class="skills-item">
-                                    <div class="type">
-                                        <div class='tipo'>CSS</div>
-                                        <div class="skill-percent">55%</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 55%;"></div>
-                                    </div>
-                                </div>
-                
-                                <div class="skills-item">
-                                    <div class="type">
-                                        <div class='tipo'>JAVASCRIPT</div>
-                                        <div class="skill-percent">5%</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 5%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--===== SKILLS CONTAINER END =====-->
-                        </div>
-                        <!--RIGA END-->
-                        
-                        <!--RIGA2 START-->
-                        <div class="riga">
-                        
-                            <!--===== STUDI CONTAINER START =====-->
-                            <div class="studi">
-                                <div class="titolo-box">
-                                    <h2>Studi</h2>
-                                </div>
-                                <div class="studi-item">
-                                    <ion-icon name="pencil-outline"></ion-icon>
-                                    <div class="studi-item-content">
-                                        <h2 class="titolo-studio">Diploma Liceo Scientifico</br>2010/15</h2>
-                                        <p class="studio-descritto">studi afferenti alla cultura scientifico - tecnologica, con particolare
-                                            riferimento alle scienze matematiche, fisiche, chimiche, biologiche, della terra,
-                                            all'informatica e alle loro applicazioni
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="studi-item">
-                                    <ion-icon name="pencil-outline"></ion-icon>
-                                    <div class="studi-item-content">
-                                        <h2 class="titolo-studio">Corso di laurea in Chimica</br>2016/2020(non terminato)</h2>
-                                        <p class="studio-descritto">studi inerenti allo studio della materia, delle sue proprietà e trasformazioni.</p>
-                                    </div>
-                                </div>
-                                <div class="studi-item">
-                                    <ion-icon name="pencil-outline"></ion-icon>
-                                    <div class="studi-item-content">
-                                        <h2 class="titolo-studio">Master Full Stack Devolpment</br>2023(in corso)</h2>
-                                        <p class="studio-descritto">studi incentrati sullo sviluppo eb che prevedono l'apprendimento di tecniche e linguaggi di programmazione sia lato front-end che back-end, quali Html, CSS, Javascript, Angular, PHP, MySQL.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--===== STUDI CONTAINER END =====-->
-                        
-                            <!--===== ESPERIENZE CONTAINER START =====-->
-                            <div class="esperienze">
-                                <div class="titolo-box">
-                                    <h2>Esperienze</h2>
-                                </div>
-                                <div class="esperienze-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    <div class="esperienze-item-content">
-                                        <h2 class="esp-titolo">Impiegato Amministrativo, Edilsol srl, L'Aquila</h2>
-                                        <h3 class="tempo"> dal 03/11/2021 al 11/07/2023</h3>
-                                        <p class="esp-descrizione">Registrazione fatture attive/passive, gestione dipendenti, preparazione resoconti mensili da presentare 
-                                            all'amministratore, bandi di concorso e gare, monitoraggio spese e rimborsi, preparazione di documenti 
-                                            per le attività di cantiere.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="esperienze-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    <div class="esperienze-item-content">
-                                        <h2 class="esp-titolo">Team Leader, Immensa Healtcare Clinic, Wolverhampton</h2>
-                                        <h3 class="tempo"> dal 10/12/2020 al 05/03/2021</h3>
-                                        <p class="esp-descrizione">coordinamento di un gruppo di lavoro nel processo di smistamento e preparazione provini da sottoporre 
-                                            ad analisi, definire i compiti dei vari componenti del team di lavoro, assicurarsi che ogni componente del 
-                                            team rispetti le regole e le direttive per la sicurezza, gestione del magazzino.                                             
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="esperienze-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    <div class="esperienze-item-content">
-                                        <h2 class="esp-titolo">Ausiliario di Laboratorio, Dante Labs, L'Aquila</h2>
-                                        <h3 class="tempo"> dal 10/11/2020 al 10/12/2020</h3>
-                                        <p class="esp-descrizione">Addetto allo smistamento e alla preparazione dei provini da sottoporre ad 
-                                            analisi, partecipazione all'analisi stessa dei provini tramite l’utilizzo di apparecchiature 
-                                            predisposte.
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="esperienze-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    <div class="esperienze-item-content">
-                                        <h2 class="esp-titolo">Cameriere, Amici, L'Aquila</h2>
-                                        <h3 class="tempo"> dal 01/10/2019 al 30/06/2020</h3>
-                                        <p class="esp-descrizione">Addetto alla preparazione della sala, accoglienza del cliente, ordinazioni e servizio di cibi e bevande al 
-                                            tavolo
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="esperienze-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    <div class="esperienze-item-content">
-                                        <h2 class="esp-titolo">Operatore Call Center Inbound, Costumer2Care, L'Aquila</h2>
-                                        <h3 class="tempo"> dal 01/03/2017 al 02/03/2018</h3>
-                                        <p class="esp-descrizione">Addetto all'assistenza clienti presso una compagnia telefonica. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--===== ESPERIENZE CONTAINER END =====-->
-                        </div>
-                        <!--RIGA2 END-->
-                    </div>
-                    <!--ABOUT-CONTENT CONTAINER END-->
-                </div>
-            </section>
-            <!--=====ABOUT START=====-->
-        </div>
-        <!--===== MAIN CONTENT START =====-->
+            
+        <!--===== MAIN CONTENT END =====-->
     </div>
     <!--===== MAIN CONTAINER END =====-->
 

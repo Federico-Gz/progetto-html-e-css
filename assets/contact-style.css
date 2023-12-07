@@ -52,6 +52,7 @@ body{
 .form-box .titolo{
     text-align: center;
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .form-box .titolo h2{
@@ -120,7 +121,8 @@ body{
 
 
 .send{
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     margin-right:20px;
     margin-bottom: 12px;
 }
